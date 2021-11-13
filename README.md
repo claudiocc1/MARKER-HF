@@ -17,5 +17,4 @@ MARKER-HF is calculated based on the following eight covariates
 
 Code to calculate MARKER-HF and the one year or 90 days survival probabilities is available in either C++ or python.
 
-![](Mortality_90d.png){:height="50%" width="50%"}
-![](Mortality_1y.png){:height="50%" width="50%"}
+![](Mortalities.png)
