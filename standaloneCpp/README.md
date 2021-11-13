@@ -19,7 +19,7 @@ for Windows.  They were cross-compiled from linux with
 ```
 (requires installation of [mingw](https://arrayfire.com/cross-compile-to-windows-from-linux/) in linux)
 
-Then to calculate  MARKER-HF from the 8 covariates from the command line in linus/Mac OS, for example:
+Then to calculate  MARKER-HF from the 8 covariates from the command line in linux/Mac OS, for example:
 ```
 ./MARKER-HF 80 12 100 16 30 1000 4.2 27
 -0.102185
