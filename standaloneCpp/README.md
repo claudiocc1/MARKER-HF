@@ -47,4 +47,4 @@ float onYearSurvival = mort(mrk, oneYear);
 float ninetyDaySurvival = mort(mrk, !oneYear);
 ```
 
-![](Mortalities.png)
+![](../Mortalities.png)
