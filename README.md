@@ -1,8 +1,8 @@
 # MARKER-HF, heart failure risk score
 
-Code to calculate MARKER-HF heart failure risk score from E. Adler et al, *Improving risk prediction in heart failure using machine learning* [Eur J Heart Fail. doi:10.1002/ejhf.2155 (2021)](https://doi.org/10.1002/ejhf.1628).
+Calculation of the MARKER-HF heart failure risk score from E. Adler et al, *Improving risk prediction in heart failure using machine learning* [Eur J Heart Fail. doi:10.1002/ejhf.2155 (2021)](https://doi.org/10.1002/ejhf.1628).
 
-The calculation of MARKER-Hf is lso available through a [web calculator](https://marker-hf.ucsd.edu).
+The calculation of MARKER-Hf is also available through a [web calculator](https://marker-hf.ucsd.edu).
 
 MARKER-HF is calculated based on the following eight covariates
 
@@ -17,5 +17,5 @@ MARKER-HF is calculated based on the following eight covariates
 
 Code to calculate MARKER-HF and the one year or 90 days survival probabilities is available in either C++ or python.
 
-![](Mortality_90d.png)
-![](Mortality_1y.png)
+![](Mortality_90d.png){:height="50%" width="50%"}
+![](Mortality_1y.png){:height="50%" width="50%"}
