@@ -15,6 +15,6 @@ MARKER-HF is calculated based on the following eight covariates
 - Albumin(g/dL) [0-6]
 - Red Blood Cell Distribution Width (%) [10-30]
 
-Code to calculate MARKER-HF and the one year or 90 days survival probabilities (aha 1-Mortality) is available in either C++ or python from the two standalone folders.
+Code to calculate MARKER-HF and the one year or 90 days survival probabilities (aha 1-Mortality) is available in either [C++](standaloneCpp/) or [python](standalonePython) from the two standalone folders.  The python version is probably easier to use.
 
 ![](Mortalities.png)
