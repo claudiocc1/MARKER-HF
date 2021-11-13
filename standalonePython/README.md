@@ -16,3 +16,5 @@ ninetyDays = mort(marker, oneYear=False)
 ```
 
 In case of problems with the inputs pyMarker returns -99 and prints out an error message
+
+![](../Mortalities.png)
