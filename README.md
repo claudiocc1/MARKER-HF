@@ -4,7 +4,7 @@ Calculation of the MARKER-HF heart failure risk score from E. Adler et al, *Impr
 
 The calculation of MARKER-Hf is also available through a [web calculator](https://marker-hf.ucsd.edu).
 
-MARKER-HF is calculated based on the following eight covariates
+MARKER-HF is calculated based on the following eight covariates within the specified ranges:
 
 - Diastolic pressure (mm Hg) [20-120]
 - Creatinine (mg/dL) [0-25]
@@ -15,6 +15,6 @@ MARKER-HF is calculated based on the following eight covariates
 - Albumin(g/dL) [0-6]
 - Red Blood Cell Distribution Width (%) [10-30]
 
-Code to calculate MARKER-HF and the one year or 90 days survival probabilities (aha 1-Mortality) is available in either [C++](standaloneCpp/) or [python](standalonePython) from the two standalone folders.  The python version is probably easier to use.
+Code to calculate MARKER-HF and the one year or 90 days survival probabilities (aka 1-Mortality) is available in either [C++](standaloneCpp/) or [python](standalonePython) from the two standalone folders.  The python version is probably easier to use.
 
 ![](Mortalities.png)

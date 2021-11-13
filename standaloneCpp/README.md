@@ -7,7 +7,7 @@ To build the MARKER-HF application on linux
 g++ -std=c++11 -o MARKER-HF MARKER-HF.C
 ```
 
-To buid the MARKER-HF application on MacOS (requires [Xcode Command Line Tools](https://mac.install.guide/commandlinetools/index.html)
+To buid the MARKER-HF application on MacOS (requires [Xcode Command Line Tools](https://mac.install.guide/commandlinetools/index.html))
 ```
 clang++ -stdlib=libc++ -o MARKER-HF MARKER-HF.C
 ```
@@ -19,14 +19,15 @@ for Windows.  They were cross-compiled from linux with
 ```
 (requires installation of [mingw](https://arrayfire.com/cross-compile-to-windows-from-linux/) in linux)
 
-Then to calculate  MARKER-HF from the 8 covariates from the command line:
+Then to calculate  MARKER-HF from the 8 covariates from the command line in linus/Mac OS, for example:
 ```
 ./MARKER-HF 80 12 100 16 30 1000 4.2 27
 -0.102185
 ```
-or
+or from Windows PowerShell:
 ```
-blah
+./MARKER-HF-64.exe 80 12 100 16 30 1000 4.2 27
+-0.102185
 ```
 
 The order of the 8 covariates is
@@ -37,3 +38,5 @@ BPDIAS CREATN BUN HGB WBC PLT ALB RDW
 In case of problems with the inputs MARKER-HF prints out an error message
 
 ## Mortality
+
+To be filled
