@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Build windows executable for Windows from linux
+# Inspired by https://arrayfire.com/cross-compile-to-windows-from-linux/
+
+# Cross compile for 32-bit windows with static libraries
+i686-w64-mingw32-g++ MARKER-HF.C -static-libgcc -static-libstdc++ -o MARKER-HF-32.exe
+
+# Cross compile for 64-bit windows with static libraries
+x86_64-w64-mingw32-g++ MARKER-HF.C -static-libgcc -static-libstdc++ -o MARKER-HF-64.exe
+
