@@ -39,4 +39,12 @@ In case of problems with the inputs MARKER-HF prints out an error message
 
 ## Mortality
 
-To be filled
+The ```mort.C``` function takes a marker-hf value and a boolean flag and returns one-year or 90-day survival.
+```
+\\ mrk is the marker-hf value (float)
+bool oneYear = true;
+float onYearSurvival = mort(mrk, oneYear);
+float ninetyDaySurvival = mort(mrk, !oneYear);
+```
+
+![](Mortalities.png)
