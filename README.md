@@ -9,7 +9,7 @@ MARKER-HF is calculated based on the following eight covariates within the speci
 - Diastolic pressure (mm Hg) [20-120]
 - Creatinine (mg/dL) [0-25]
 - Blood Urea Nitrogen (mg/dL) [0-160]
-- Hemoglobin (g/dL) [g/dL) [2-20]
+- Hemoglobin (g/dL) [2-20]
 - White Blood Cell Count (1e3 μL) [0-40]
 - Platelets (1e3 μL)  [0-1500]
 - Albumin(g/dL) [0-6]
