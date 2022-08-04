@@ -54,7 +54,7 @@ def pyMarker(v):
     if HGB<2 or HGB>20:
         print("Input out of range: HGB = ", HGB)
         return -99
-    if WBC<0 or BPDIAS>40:
+    if WBC<0 or WBC>40:
         print("Input out of range: WBC = ", WBC)
         return -99
     if PLT<0 or PLT>1500:
