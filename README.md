@@ -17,4 +17,6 @@ MARKER-HF is calculated based on the following eight covariates within the speci
 
 Code to calculate MARKER-HF and the one year or 90 days survival probabilities (aka 1-Mortality) is available in either [C++](standaloneCpp/) or [python](standalonePython) from the two standalone folders.  The python version is probably easier to use.
 
+Note: in the [C++](standaloneCpp) folder there are instructions on how to build the executable for MacOS and Linux, as well as precompiled binaries for WIndows.
+
 ![](Mortalities.png)
