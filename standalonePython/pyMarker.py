@@ -1,7 +1,9 @@
-def pyMarker(v):
+import numbers
+def pyMarker(v, checkBoundaries=True):
     
     """
-    Input:  ordered list with [BPDIAS, CREATN, BUN, HGB, WBC, PLT, ALB]
+    Input:  ordered list with [BPDIAS, CREATN, BUN, HGB, WBC, PLT, ALB, RDW]
+            check if variables within boundaries (new Jan 2024)
     Output: value of Marker-HF. Return -99 if out of range.
 
     Units are:
@@ -32,9 +34,11 @@ def pyMarker(v):
         return -99
 
     # is everything in the list a number?
+    # More robust check: Jan 2024
     for elem in v:
-        number = type(elem)==int or type(elem)==float
-        if not number:
+#       number = type(elem)==int or type(elem)==float
+#       if not number:
+        if not isinstance(elem, numbers.Number):
             print(elem, "is not a valid number")
             return -99
 
@@ -42,30 +46,31 @@ def pyMarker(v):
     BPDIAS, CREATN, BUN, HGB, WBC, PLT, ALB, RDW = v
                     
     # Check the input values
-    if BPDIAS<20 or BPDIAS>120:
-        print("Input out of range: BPDIAS = ", BPDIAS)
-        return -99
-    if CREATN<0 or CREATN>25:
-        print("Input out of range: CREATN = ", CREATN)
-        return -99
-    if BUN<0 or BUN>160:
-        print("Input out of range: BUN = ", BUN)
-        return -99
-    if HGB<2 or HGB>20:
-        print("Input out of range: HGB = ", HGB)
-        return -99
-    if WBC<0 or WBC>40:
-        print("Input out of range: WBC = ", WBC)
-        return -99
-    if PLT<0 or PLT>1500:
-        print("Input out of range: PLT = ", PLT)
-        return -99
-    if ALB<0 or ALB>6:
-        print("Input out of range: ALB = ", ALB)
-        return -99
-    if RDW<10 or RDW>30:
-        print("Input out of range: RDW = ", RDW)
-        return -99 
+    if checkBoundaries:
+        if BPDIAS<20 or BPDIAS>120:
+            print("Input out of range: BPDIAS = ", BPDIAS)
+            return -99
+        if CREATN<0 or CREATN>25:
+            print("Input out of range: CREATN = ", CREATN)
+            return -99
+        if BUN<0 or BUN>160:
+            print("Input out of range: BUN = ", BUN)
+            return -99
+        if HGB<2 or HGB>20:
+            print("Input out of range: HGB = ", HGB)
+            return -99
+        if WBC<0 or WBC>40:
+            print("Input out of range: WBC = ", WBC)
+            return -99
+        if PLT<0 or PLT>1500:
+            print("Input out of range: PLT = ", PLT)
+            return -99
+        if ALB<0 or ALB>6:
+            print("Input out of range: ALB = ", ALB)
+            return -99
+        if RDW<10 or RDW>30:
+            print("Input out of range: RDW = ", RDW)
+            return -99 
        
 
     totsum = 0.
